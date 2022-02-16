@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+.wrapper {
+  font-family: Open Sans;
+  text-transform: uppercase;
+  line-height: 1;
+  overflow: visible;
+}
+
+.color1 {
+  color: #ffffff;
+}
+
+.color2 {
+  color: #0000ff;
+}
+
+.back1 {
+  background-color: #ffffff !important;
+}
+
+.back2 {
+  background-color: #0000ff !important;
+}
+
+.arimo {
+  font-family: Arimo;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mask {
+  overflow: hidden;
+}
+
+.animation-l3s-big {
+  display: grid;
+  grid-template-columns: 40px 470px 60px 220px 40px;
+  grid-template-rows: 75px 60px;
+  grid-template-areas:
+    'left line1 slash logo right'
+    'left line2 slash logo right';
+}
+
+.animation-l3s-small {
+  display: grid;
+  grid-template-columns: 40px 470px 40px;
+  grid-template-rows: 75px 60px;
+  grid-template-areas:
+    'left line1 right'
+    'left line2 right';
+}
+
+.animation-l3s-left {
+  grid-area: left;
+  font-size: 7em;
+}
+
+.animation-l3s-line1 {
+  padding: 10px;
+  grid-area: line1;
+  font-size: 2.5em;
+  align-self: flex-end;
+  justify-self: left;
+}
+
+.animation-l3s-line2 {
+  padding: 10px;
+  grid-area: line2;
+  font-size: 1.5em;
+  align-self: flex-start;
+  justify-self: left;
+}
+
+.animation-l3s-slash {
+  grid-area: slash;
+  font-size: 8em;
+}
+
+.animation-l3s-logo {
+  grid-area: logo;
+  font-size: 5em;
+  align-self: center;
+  justify-self: center;
+}
+
+.animation-l3s-right {
+  grid-area: right;
+  font-size: 7em;
+}

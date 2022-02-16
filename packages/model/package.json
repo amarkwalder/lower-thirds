@@ -1,0 +1,24 @@
+{
+  "name": "@l3s/model",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf ./dist tsconfig.build.tsbuildinfo",
+    "compile": "tsc -b tsconfig.build.json",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "~4.5.0"
+  },
+  "dependencies": {
+    "fp-ts": "^2.11.8",
+    "io-ts": "^2.2.16"
+  }
+}

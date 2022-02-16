@@ -1,0 +1,7 @@
+node_modules
+**/dist
+**/build
+results
+.nyc_output
+*.tsbuildinfo
+.pnpm-debug.log
