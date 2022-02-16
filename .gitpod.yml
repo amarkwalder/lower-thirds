@@ -4,6 +4,6 @@
 
 tasks:
   - init: pnpm install
-    command: pnpm --filter @l3s/server --filter @l3s/client start
+    command: pnpm start
 
 
