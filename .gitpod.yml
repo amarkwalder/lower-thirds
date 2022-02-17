@@ -5,6 +5,7 @@
 tasks:
   - name: Setup Workspace
     init: |
+      pnpm add -g pnpm
       pnpm install
       gp sync-done setup
   - name: Server
