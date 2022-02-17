@@ -3,12 +3,18 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - name: Initiate Workspace
-    init: pnpm install
+  - name: Setup Workspace
+    init: |
+      pnpm install
+      gp sync-done setup
   - name: Server
-    command: pnpm --filter @l3s/server start
+    command: |
+      gp sync-await setup
+      pnpm --filter @l3s/server start
   - name: Client
-    command: pnpm --filter @l3s/client start
+    command: |
+      gp sync-await setup
+      pnpm --filter @l3s/client start
 
 ports:
   - port: 3000
