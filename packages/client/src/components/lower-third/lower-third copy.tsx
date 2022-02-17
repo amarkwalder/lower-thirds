@@ -10,7 +10,7 @@ import {
   GridComponentData,
   L3SComponentConfigBig,
   L3SComponentConfigSmall,
-} from "@L3S/model";
+} from "@l3s/model";
 
 import "./lower-third.css";
 

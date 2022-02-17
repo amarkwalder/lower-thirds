@@ -1,5 +1,5 @@
 import { createMachine, assign, EventObject } from "xstate";
-import { Command } from "@L3S/model";
+import { Command } from "@l3s/model";
 
 type CommandExecutorContext = {
   componentName: string;

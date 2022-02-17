@@ -43,7 +43,7 @@ importers:
       '@babel/core': ^7.17.2
       '@babel/plugin-syntax-flow': ^7.16.7
       '@babel/plugin-transform-react-jsx': ^7.16.7
-      '@l3s/model': workspace:*
+      '@l3s/model': ../model
       '@react-spring/web': ^9.4.3
       '@react-three/drei': ^8.8.4
       '@react-three/fiber': ^7.0.26
@@ -126,7 +126,7 @@ importers:
 
   packages/server:
     specifiers:
-      '@l3s/model': '*'
+      '@l3s/model': ../model
       '@types/node': ~16.11.0
       concurrently: ^7.0.0
       cors: ^2.8.5

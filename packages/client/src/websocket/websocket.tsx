@@ -1,7 +1,7 @@
 import React, { createContext, FC, useEffect } from "react";
 import { connect, Socket } from "socket.io-client";
 import { useSetRecoilState } from "recoil";
-import { Layout, Component, Command } from "@L3S/model";
+import { Layout, Component, Command } from "@l3s/model";
 import {
   layoutsAtom,
   componentsAtom,

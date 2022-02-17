@@ -15,7 +15,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@l3s/model": "*",
+    "@l3s/model": "../model",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-ws": "^5.0.2",

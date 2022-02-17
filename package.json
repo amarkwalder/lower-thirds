@@ -9,7 +9,7 @@
     "docs": "doctoc --title '**Table of content**' README.md",
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "start": "lerna run start --stream",
+    "start": "pnpm --filter @l3s/server --filter @l3s/client start",
     "pub": "lerna publish",
     "lint": "eslint --ext js,ts,tsx ."
   },
