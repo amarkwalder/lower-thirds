@@ -5,3 +5,4 @@ results
 .nyc_output
 *.tsbuildinfo
 .pnpm-debug.log
+.pnpm-store
