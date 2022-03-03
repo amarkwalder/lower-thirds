@@ -23,14 +23,13 @@ tasks:
       pnpm install
       gp sync-done setup
   - name: Server
-    init: |
-      gp sync-await setup
     command: |
+      gp sync-await setup
       pnpm --filter @l3s/server start
   - name: Client
-    init: |
-      gp sync-await setup
     command: |
+      gp sync-await setup
+      eval $(gp env -e)
       pnpm --filter @l3s/client start
 
 # eval $(gp env -e)
