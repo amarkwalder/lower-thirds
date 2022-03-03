@@ -17,7 +17,7 @@
 #     onOpen: ignore
 
 tasks:
-  - name: Setup Workspace
+  - name: Workspace
     init: |
       pnpm add -g pnpm
       pnpm install
