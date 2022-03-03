@@ -32,7 +32,7 @@ tasks:
   - name: Client
     init: |
       gp sync-await setup
-      gp env REACT_APP_WS_BASE=$(gp url 3000)
+      gp env REACT_APP_WS_BASE=$(gp url 4000)
     command: |
       eval $(gp env -e)
       pnpm --filter @l3s/client start
