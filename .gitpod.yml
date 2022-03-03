@@ -31,6 +31,7 @@ tasks:
     init: |
       gp sync-await setup
     command: |
+      eval $(gp env -e)
       pnpm --filter @l3s/client start
 
 ports:
