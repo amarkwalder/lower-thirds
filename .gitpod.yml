@@ -26,14 +26,17 @@ tasks:
     init: |
       gp sync-await setup
     command: |
+      gp forward-port 4000 4000
       pnpm --filter @l3s/server start
   - name: Client
     init: |
       gp sync-await setup
     command: |
-      eval $(gp env -e)
+      gp forward-port 3000 3000
       pnpm --filter @l3s/client start
 
+# eval $(gp env -e)
+      
 ports:
   - port: 3000
     onOpen: open-browser
