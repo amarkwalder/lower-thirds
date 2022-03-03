@@ -33,6 +33,12 @@ tasks:
     command: |
       pnpm --filter @l3s/client start
 
+ports:
+   - port: 3000
+     onOpen: open-browser
+   - port: 4000
+     onOpen: open-browser
+
 vscode:
   extensions:
     - ms-azuretools.vscode-docker
