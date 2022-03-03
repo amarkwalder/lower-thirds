@@ -21,6 +21,8 @@ tasks:
     init: |
       pnpm add -g pnpm
       pnpm install
+      pnpm --filter @l3s/server build
+      pnpm --filter @l3s/client build
       gp sync-done setup
   - name: Server
     init: |
@@ -30,8 +32,9 @@ tasks:
   - name: Client
     init: |
       gp sync-await setup
+    env:
+      REACT_APP_WS_BASE: $(gp url 3000)
     command: |
-      eval $(gp env -e)
       pnpm --filter @l3s/client start
       
 ports:
