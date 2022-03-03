@@ -15,31 +15,23 @@
 #     onOpen: open-preview
 #   - port: 4000
 #     onOpen: ignore
-# tasks:
-#   - name: Setup Workspace
-#     init: |
-#       pnpm add -g pnpm
-#       pnpm install
-#       gp sync-done setup
-#   - name: Server
-#     init: |
-#       gp sync-await setup
-#     command: |
-#       pnpm --filter @l3s/server start
-#   - name: Client
-#     init: |
-#       gp sync-await setup
-#     command: |
-#       pnpm --filter @l3s/client start
 
 tasks:
-  - init: |
-      docker-compose pull
-  - command: |
-      docker-compose up
-ports:
-  - port: 4000
-    onOpen: open-browser
+  - name: Setup Workspace
+    init: |
+      pnpm add -g pnpm
+      pnpm install
+      gp sync-done setup
+  - name: Server
+    init: |
+      gp sync-await setup
+    command: |
+      pnpm --filter @l3s/server start
+  - name: Client
+    init: |
+      gp sync-await setup
+    command: |
+      pnpm --filter @l3s/client start
 
 vscode:
   extensions:
