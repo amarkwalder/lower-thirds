@@ -1,3 +1,17 @@
 {
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "stylelint.validate": ["css", "scss"],
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggestSelection": "first",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.tree.indent": 16,
+  "window.autoDetectColorScheme": true,
+  "window.zoomLevel": 1.5,
   "remote.localPortHost": "allInterfaces"
 }
